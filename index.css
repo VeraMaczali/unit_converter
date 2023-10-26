@@ -1,0 +1,140 @@
+:root {
+  --dark-background-color: #1f2937;
+  --lighter-background-color: #273549;
+  --purple-background-color: #6943ff;
+  --text-color: #fff;
+  --full-background-color: #3d3d3d;
+}
+
+body {
+  margin: 0;
+  padding: 40px 10px;
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--full-background-color);
+  color: var(--text-color);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.container {
+  background-color: var(--dark-background-color);
+  border-radius: 5px;
+}
+.top {
+  background-color: var(--purple-background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 50px 20px 50px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.top h1 {
+  margin: 0;
+}
+
+#input {
+  background-color: var(--purple-background-color);
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  max-width: 100px;
+  padding: 5px 5px;
+  margin: 50px 0 30px 0;
+  overflow: visible;
+}
+
+#convert-btn {
+  background-color: var(--text-color);
+  color: var(--purple-background-color);
+  border: none;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin: 10px 0;
+  width: 100px;
+}
+
+#convert-btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#reset-btn {
+  background-color: var(--purple-background-color);
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  font-weight: 600;
+  font-size: 18px;
+  padding: 5px 20px;
+  border-radius: 3px;
+  margin: 20px 0 10px 0;
+  width: 100px;
+}
+
+#reset-btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#error {
+  color: gold;
+  font-size: 25px;
+  font-weight: 700;
+  text-shadow: 0px 0px 1px black;
+  margin: 5px;
+}
+
+.convert-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 20px;
+  box-sizing: border-box;
+}
+.convert-section .convert-card {
+  width: 100%;
+  background-color: var(--lighter-background-color);
+  padding: 20px 0;
+}
+
+.unit {
+  font-size: 1.2rem;
+  margin: 5px;
+}
+
+.convert-text {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+  .top {
+    padding: 10px 15px;
+  }
+  .top h1 {
+    font-size: 1.2rem;
+  }
+  #input {
+    font-size: 0.9rem;
+    margin: 10px 0;
+  }
+  .convert-section {
+    padding: 15px;
+    gap: 15px;
+  }
+}
